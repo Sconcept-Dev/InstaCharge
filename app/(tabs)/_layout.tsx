@@ -34,19 +34,36 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="ticketlist"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Ticket List',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="rectangleList.fill" color={color} />,
         }}
       />
             <Tabs.Screen
-        name="map"
+        name="addticket"
         options={{
-          title: 'Map',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Add Ticket',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="plus.fill" color={color} />,
+        }}
+      />
+
+<Tabs.Screen
+        name="settings"
+        options={{
+          title: 'Settings',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="cog.fill" color={color} />,
+        }}
+      />
+
+<Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profile',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="user.fill" color={color} />,
         }}
       />
     </Tabs>
+    
   );
 }
